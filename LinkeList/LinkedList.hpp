@@ -52,8 +52,8 @@ LinkedList<T>::~LinkedList()
 
 }
 
-
-bool empty()
+template <class T>
+bool LinkedList<T>::empty()
 {
 
 }

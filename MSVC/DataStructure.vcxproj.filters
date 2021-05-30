@@ -18,6 +18,9 @@
     <ClInclude Include="..\LinkeList\LinkedList.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\List\List.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Test\test.cpp">

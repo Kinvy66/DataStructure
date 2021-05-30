@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\LinkeList\LinkedList.hpp" />
+    <ClInclude Include="..\List\List.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Test\test.cpp" />
