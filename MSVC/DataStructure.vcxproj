@@ -139,11 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\LinkeList\LinkedList.hpp" />
-    <ClInclude Include="..\List\List.h" />
+    <ClCompile Include="..\Test\test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Test\test.cpp" />
+    <ClInclude Include="..\DataStructure\list.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
