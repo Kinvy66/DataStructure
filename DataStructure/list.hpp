@@ -2,6 +2,7 @@
 using namespace std;
 
 //单链表
+
 template<class T>
 class list
 {
@@ -26,29 +27,42 @@ public:
 	void printList();					//打印
 
 private:
-	typedef struct Node
+	typedef struct node
 	{
 		T data;
 		struct Node* next;
 	} Node;
+
 	Node* linkedList = new Node();
 	//头尾指针
-	Node* star = linkedList;
-	Node* end = linkedList;
-	Node& findLink(int _index);			//查找某个位置的元素，返回一个节点
+	Node* star;
+	Node* end;
+
+	Node& getNode(int _index);
 };
+
+template<class>
+inline
+Node& list<T>::getNode(int _index)
+{
+
+}
 
 template <class T>
 inline
 list<T>::list()
 {
 	linkedList->next = nullptr;
+	star = linkedList;
+	end = linkedList;
 }
 
 template<class T>
 inline list<T>::list(std::initializer_list<T> _item)
 {
 	linkedList->next = nullptr;
+
+	star = linkedList;
 	
 	//头插法
 	/*
@@ -197,6 +211,4 @@ inline void list<T>::printList()
 	}
 	cout << endl;
 }
-
-
 

@@ -2,6 +2,8 @@
 #include "../DataStructure/list.hpp"
 using namespace std;
 
+
+
 void test01()
 {
 	list<int> ls({1,5,32});
@@ -20,3 +22,5 @@ int main()
 	system("pause");
 	return 0;
 }
+
+
