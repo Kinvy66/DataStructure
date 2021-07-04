@@ -41,9 +41,9 @@ private:
 	Node& getNode(int _index);
 };
 
-template<class>
+template<class T>
 inline
-Node& list<T>::getNode(int _index)
+list<T>::Node& list<T>::getNode(int _index)
 {
 
 }
