@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\DataStructure\list.h">
+    <ClInclude Include="..\DataStructure\list.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
