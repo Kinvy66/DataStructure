@@ -38,15 +38,18 @@ private:
 	Node* star;
 	Node* end;
 
-	Node& getNode(int _index);
+	Node* getNode(int _index)
+	{
+
+		Node* p = linkedList;
+		for (int i = 0; i < _index + 1; ++i) {
+			Node* temp = p->next;
+			p = temp;
+		}
+		return p;
+	}
 };
 
-template<class T>
-inline
-list<T>::Node& list<T>::getNode(int _index)
-{
-
-}
 
 template <class T>
 inline
@@ -129,13 +132,14 @@ template<class T>
 inline T list<T>::at(int _index)
 {
 	T data = 0;
-	Node* p = linkedList;
-	for (int i = 0; i < _index+1; ++i) {
-		Node* temp = p->next;
-		data = temp->data;
-		p = temp;
-	}
-	return data;
+	//Node* p = linkedList;
+	//for (int i = 0; i < _index+1; ++i) {
+	//	Node* temp = p->next;
+	//	data = temp->data;
+	//	p = temp;
+	//}
+	Node* p = getNode(_index);
+	return p->data;
 }
 
 template<class T>
@@ -212,3 +216,14 @@ inline void list<T>::printList()
 	cout << endl;
 }
 
+//template<class T>
+//inline list<T>::Node list<T>::getNode(int _index)
+//{
+//	
+//	Node* p = linkedList;
+//	for (int i = 0; i < _index + 1; ++i) {
+//		Node* temp = p->next;
+//		p = temp;
+//	}
+//	return p;
+//}
