@@ -143,6 +143,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\DataStructure\list.hpp" />
+    <ClInclude Include="..\DataStructure\list\AbstractList.h" />
+    <ClInclude Include="..\DataStructure\list\List.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
